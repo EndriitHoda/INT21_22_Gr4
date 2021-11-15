@@ -53,3 +53,73 @@
     text-align: center;
     overflow: hidden;
   }
+  .image-container {
+    width: 1500px;
+    background-color: pink;
+    height: 300px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+  }
+  .slide {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+  }
+  #slide-1:target ~ .image-container {
+    left: 0px;
+  }
+  #slide-2:target ~ .image-container {
+    left: -500px;
+  }
+  #slide-3:target ~ .image-container {
+    left: -1000px;
+  }
+  .buttons {
+    position: relative;
+    top: -20px;
+  }
+  .buttons a {
+    display: inline-block;
+    height: 13px;
+    width: 20px;
+    border-radius: 50px;
+    background-color:#ffffff;
+  }
+  .buttons a:hover {
+      display: inline-block;
+      background-color: #c4c3c3;     
+      transform: scale(1.2);     
+  }
+  .pano {
+    position: relative;
+  height: 1500px;
+  width: 100%;
+  opacity: 20%;
+}
+.button1{
+  position: absolute;
+top: 297px;
+left: 13px;
+width: 55px;
+height: 55px;
+background-color: #ffffff;
+color: #000000;
+border-radius: 1000px;
+transition: transform 1.4s;
+}
+.button2{
+  position: absolute;
+top: 297px;
+left: 75px;
+width: 55px;
+height: 55px;
+background-color:black;
+color: White;
+border-radius: 1000px;
+transition: transform 1.4s;
+}
