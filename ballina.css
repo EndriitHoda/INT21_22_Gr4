@@ -1,4 +1,4 @@
-
+/* Pjesa e css navbar  */
 .ul_navbar {
     
     border-radius: 13px;
@@ -8,7 +8,6 @@
     overflow: hidden;
     background-color: #737e7a;
   }
-  
  .li_navbar {
     float: left;
   }
@@ -25,25 +24,9 @@
 .li_navbar a:hover {
     background-color: rgb(45, 80, 72);
   }
-  
-  .active {
-    background-color: #324646;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  .prev {
-    left: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
+/* Pjesa e css slideshow*/
 .slider {
+    position: relative;
     width: 500px;
     height: 300px;
     background-color: yellow;
@@ -95,12 +78,16 @@
       background-color: #c4c3c3;     
       transform: scale(1.2);     
   }
+  /* Pjesa e css fotoja ne background*/
   .pano {
-    position: relative;
-  height: 1500px;
+    position:relative;
+  
+  height: 100%;
   width: 100%;
   opacity: 20%;
 }
+
+/* Pjesa e css butonat per bright-dark mode*/
 .button1{
   position: absolute;
 top: 297px;
@@ -123,3 +110,34 @@ color: White;
 border-radius: 1000px;
 transition: transform 1.4s;
 }
+/*Logo ES */
+.es-logo 
+{   
+  position: absolute;
+ top: 130px;
+  margin-left: 160px;
+  width: 150px;
+  height: 150px;
+}
+.gaming-logo {
+  position: absolute;
+ top: 130px;
+  margin-left: 1160px;
+  width: 150px;
+  height: 150px;
+}
+/* Log Out */
+.active {
+  background-color: #324646;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.active a:hover{
+  position: relative;
+  background-color: #000000;
+}
+
+
