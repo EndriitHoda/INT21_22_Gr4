@@ -1,6 +1,7 @@
-body{
-  background-image: url('images/pano.png');
-  background-repeat: no-repeat;
+.background-image{
+  position:relative;
+  width: 100%;
+  opacity: 20%;
   
 }
 /* Pjesa e css navbar  */
@@ -90,25 +91,34 @@ body{
   opacity: 20%;
 }
 
+
+
+
 /* Pjesa e css butonat per bright-dark mode*/
 .button1{
-  position: absolute;
+ position: absolute;
+ box-shadow: #ADCFFF 0 -12px 6px inset;
+ font-family: -apple-system,sans-serif;
+ cursor: pointer;
 top: 297px;
 left: 13px;
 width: 55px;
 height: 55px;
-background-color: #ffffff;
+background-color: #f7eeee;
 color: #000000;
 border-radius: 1000px;
 transition: transform 1.4s;
 }
 .button2{
   position: absolute;
+  box-shadow: #353b42 0 -12px 6px inset;
+  font-family: -apple-system,sans-serif;
+  cursor: pointer;
 top: 297px;
 left: 75px;
 width: 55px;
 height: 55px;
-background-color:black;
+background-color:rgb(25, 26, 25);
 color: White;
 border-radius: 1000px;
 transition: transform 1.4s;
