@@ -6,7 +6,7 @@ body{
 	color: #777;
 	font-family: sans-serif;
 	font-weight: 300;
-	background-color: #151134;
+	background-image: url('images/wallpaper.jpg');
 }
 #login-box{
 	position: relative;
@@ -51,7 +51,7 @@ input[type="text"],input[type="password"]
 	margin: 28px;
 	width: 120px;
 	height: 32px;
-	background: #f44336;
+	background: #41a0a3;
 	border: none;
 	border-radius: 2px;
 	color: #fff;
@@ -63,7 +63,7 @@ input[type="text"],input[type="password"]
 }
 input[type="submit"]:hover,input[type="submit"]:focus
 {
-	background: #ff5722;
+	background: #41a0a3;
 	transition: 0.2s ease;
 }
 .right-box

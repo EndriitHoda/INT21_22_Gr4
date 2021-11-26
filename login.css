@@ -1,33 +1,29 @@
-.gallery {
-	background-color:#9db3a3;
-	opacity:80%;
-    border: 2px solid #ccc;  
-    margin-bottom:13%;
-    margin-left: 50px;
-}
-
-.desc {
-  padding: 7px;
-  text-align: center;
- 
-}
-
-.responsive {
-  padding:6px 6px;
-  width: 43%;
-  margin-left: 400px;
-  
- 
- 
-}
-
 body {
-    font-family: "Lucida Sans", Verdana, Arial, sans-serif;
-    font-size: 90%;
 	background-image: url("images/wallpaper.jpg");
 	 background-repeat: no-repeat;
 	 background-size:100%;
 
+}
+.gallery {
+	background-color:white;
+    border: 4px solid #41a0a3;  
+    margin-bottom:13%;
+    margin-left: 50px;
+    opacity: 95%;    
+}
+
+.permbajtja {
+  padding: 7px;
+  text-align: center;
+  font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+  font-size: 90%;
+}
+
+.responsive {
+  position: fixed;
+  bottom: 0;
+  width: 43%;
+  margin-left: 400px; 
 }
 
 Bordered form */
@@ -74,17 +70,23 @@ button:hover {
   }
 
 
-.content {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
- 
-}
+
 .gallery img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 48%;
-  
-  
+  width: 48%;  
+}
+.kyqu{
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  background-color: #41a0a3;
+} 
+input[type="text"],input[type="password"] {
+
+    border: 2px solid #41a0a3;
 }
