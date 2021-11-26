@@ -5,41 +5,50 @@
   
 }
 /* Pjesa e css navbar  */
-.ul_navbar {
+ .navbar {
     position:fixed;
     width: 100%;
     opacity: 70%;
     border-radius: 13px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
     background-color: #197c6f;
     z-index: 1;
-  }
- .li_navbar {
-    float: left;
-  }
+  } 
   
- .li_navbar a{
+ .navbar a{
      border-radius: 10px;
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    float: left;
   }
   
-.li_navbar a:hover {
+.navbar a:hover {
     background-color: rgb(45, 80, 72);
-  }
-  .ul_navbar input[type=text] {
+  } 
+ .navbar .log_out {
+   float: right;
+ }
+  .navbar .search-container {
     float: right;
+  }
+  
+  .navbar input[type=text] {
     padding: 6px;
-    border: none;
     margin-top: 8px;
-    margin-right: 16px;
     font-size: 17px;
+    border: none;
+  }
+  
+  .navbar .search-container button {
+    float: right;
+    padding: 16px 18px;
+    margin-top: 8px;
+    margin-right: 17px;
+    background: #8de5b4;
+    border: none;
+    cursor: pointer;
   }
 /* Pjesa e css slideshow*/
 .slider {
