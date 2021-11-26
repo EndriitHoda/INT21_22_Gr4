@@ -6,13 +6,16 @@
 }
 /* Pjesa e css navbar  */
 .ul_navbar {
-    
+    position:fixed;
+    width: 100%;
+    opacity: 70%;
     border-radius: 13px;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #197c6f;
+    z-index: 1;
   }
  .li_navbar {
     float: left;
@@ -29,6 +32,14 @@
   
 .li_navbar a:hover {
     background-color: rgb(45, 80, 72);
+  }
+  .ul_navbar input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
   }
 /* Pjesa e css slideshow*/
 .slider {
