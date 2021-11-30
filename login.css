@@ -2,8 +2,14 @@ body {
 	background-image: url("images/wallpaper.jpg");
 	 background-repeat: no-repeat;
 	 background-size:100%;
-
 }
+.responsive {
+  position: fixed;
+  bottom: 0;
+  width: 43%;
+  margin-left: 400px; 
+}
+
 .gallery {
 	background-color:white;
     border: 4px solid #41a0a3;  
@@ -19,26 +25,11 @@ body {
   font-size: 90%;
 }
 
-.responsive {
-  position: fixed;
-  bottom: 0;
-  width: 43%;
-  margin-left: 400px; 
-}
-
-Bordered form */
-form {
-  border: 3px solid #f1f1f1;
-}
-
-
 input[type=text], input[type=password] {
   width: 50%;
   padding: 12px 20px;
   margin: 8px 0;
-  display: inline-block;
   border: 1px solid #ccc;
-  box-sizing: border-box;
 }
 
 
@@ -49,44 +40,28 @@ button {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 40%;
 }
 
-/* Shto hover per butonat*/
 button:hover {
   opacity: 0.8;
 }
 
-/* Stile per cancel dhe keni harruar fjalekailim button */
-.cancelbtn {
-	
-  width: 40%;
-  background-color: #41a0a3;
-}
-.bt1 {
-	
-    width: 50%;
-    background-color: #41a0a3;
-  }
-
-
-
-.gallery img {
+.logo{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 48%;  
 }
 .kyqu{
+  background-color: #41a0a3;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 50%;
-  background-color: #41a0a3;
 } 
 input[type="text"],input[type="password"] {
-
     border: 2px solid #41a0a3;
 }
