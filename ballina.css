@@ -110,10 +110,10 @@ color: #000000;
 border-radius: 1000px;
 }
 .button2{
-  position: absolute;
-  box-shadow: #353b42 0 -12px 6px inset;
-  font-family: sans-serif;
-  cursor: pointer;
+position: absolute;
+box-shadow: #353b42 0 -12px 6px inset;
+font-family: sans-serif;
+cursor: pointer;
 top: 297px;
 left: 75px;
 width: 55px;
@@ -147,3 +147,29 @@ span {
     border:1px solid #dddddd;
     padding: 8px;    
 }
+.rreth_nesh {
+  position: relative; 
+  transition: transform .9s;
+  width: 500px; 
+  left:200px;
+  border-radius: 25px;
+  background-color:#000000 ;
+}
+.rreth_nesh:hover {
+  transform: scale(1.04);
+}
+
+
+.rreth_nesh1 {
+  position: relative; 
+  transition: transform .9s;
+  width: 500px; 
+  left:700px;
+  border-radius: 25px;
+  background-color:#000000 ;
+
+}
+.rreth_nesh1:hover {
+  transform: scale(1.04);
+}
+
