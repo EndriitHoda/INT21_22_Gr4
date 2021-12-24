@@ -153,7 +153,7 @@ span {
   width: 500px; 
   left:200px;
   border-radius: 25px;
-  background-color:#000000 ;
+  background-color:#1f311f ;
 }
 .rreth_nesh:hover {
   transform: scale(1.04);
@@ -166,10 +166,18 @@ span {
   width: 500px; 
   left:700px;
   border-radius: 25px;
-  background-color:#000000 ;
+  background-color:#1f311f ;
 
 }
 .rreth_nesh1:hover {
   transform: scale(1.04);
 }
 
+.kontaktet {
+  position: relative; 
+  transition: transform .9s;
+}
+
+.kontaktet:hover{
+  transform: scale(1.1);
+}
