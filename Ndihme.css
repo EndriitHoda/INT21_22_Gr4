@@ -3,30 +3,52 @@ body {
 }
 .container {
     position: relative;
-    width:40%;
-    top:100px;
-    left: 25%;
-    border-radius: 5px;
+    width:30%;
+    height:9%;
+    top:150px;
+    left: 35%;
+    border-radius: 15px;
     background-color: #f2f2f2;
     padding: 20px;
-    }
-      input[type=text], select, textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin-top: 6px;
-        margin-bottom: 16px;
-      }
-      input[type=submit] {
-        background-color: #294525;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        }
-      input[type=submit]:hover {
-        background-color: #45a049;
-        }
+    z-index: 1;
+}
+
+input[type=text], select, textarea {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+input[type=submit] {
+  position: relative;
+    background-color:orangered;
+    top: -37px;
+    left: 45px;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: orange;
+}
+.titulli {
+  position: relative;
+  top: 120px;
+  left: 480px;
+  color: orange;
+  font-family: Cursive;
+}
+
+.help {
+  position: relative;
+  width:100px;
+  height:76px;
+  top:100px;
+  left:630px;
+}
+
