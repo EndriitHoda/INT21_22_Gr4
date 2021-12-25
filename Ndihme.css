@@ -5,7 +5,7 @@ body {
     position: relative;
     width:30%;
     height:9%;
-    top:150px;
+    top:-250px;
     left: 35%;
     border-radius: 15px;
     background-color: #f2f2f2;
@@ -38,7 +38,7 @@ input[type=submit]:hover {
 }
 .titulli {
   position: relative;
-  top: 120px;
+  top: 80px;
   left: 480px;
   color: orange;
   font-family: Cursive;
@@ -48,7 +48,36 @@ input[type=submit]:hover {
   position: relative;
   width:100px;
   height:76px;
-  top:100px;
+  top:60px;
   left:630px;
 }
+.download {
+  position: relative;
+  top: 80px;
+  left: 400px;
+}
+.download:hover{
+  cursor: pointer;
+  transform: scale(1.01);
+}
 
+.login{
+  position: relative;
+  top:-110px;
+  left: 600px;
+}
+.login:hover{
+  cursor: pointer;
+  transform: scale(1.01);
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.game {
+  position: relative;
+  top: -302px;
+  left: 800px;
+}
+.game:hover{
+  cursor: pointer;
+  transform: scale(1.01);
+}
