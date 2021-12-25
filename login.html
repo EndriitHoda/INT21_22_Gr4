@@ -3,22 +3,31 @@
           <link rel = "icon" href = "images/gaming-logo.jpg" type = "image/x-icon">
           <title>Login</title>
           <link rel="stylesheet" href="login.css">
+          <script src="login.js"> </script>
       </head>
-  <body>
+  <body onload="Ora();login();">
+    <div class="div1" id="txt" ></div>
+       <script>
+        alert("Kjo faqe menagjohet nga Es.gaming");
+      </script>
         <div class="responsive">
           <div class="gallery">
             <img class="logo" src="images/logo.png">
-              <div class="permbajtja">
-	              <form action="Ballina.html" autocomplete="on">
-                   <input type="text" placeholder="Sheno Emrin e Perdoruesit"  required autofocus></br>
-                   <input type="password" placeholder="Sheno fjalekalimin" required></br>
-                   <input type="submit" class="kyqu" value="Kyçu"></br>
+              <div class="permbajtja" >
+              <div id="error"></div>
+	              <form action="Ballina.html" id="form" autocomplete="on">
+                   <input type="text" id="name" name="name" placeholder="Sheno Emrin e Perdoruesit"  required autofocus></br>
+                   <input type="password" id="password" name="password" placeholder="Sheno fjalekalimin" required></br>
+                   <input type="submit" class="kyqu"  value="Kyçu"></br>
                    <label> <input type="checkbox" > Më kujto</label></br>
                    <a href="login.html" ><button type="button">Anulo</button></a>
                    <a href="regjistrohu.html"><button type="button"  >Keni harruar fjalëkalimin?</button></a>
               	</form>
               </div>	 
           </div>
+            <footer>
+	            <p style="text-align:center;color:white">&copy; T&#517; gjitha t&#517; drejtat jan&#517; t&#517; rezervuara nga &rarr; Es.gaming</p>
+            </footer>
         </div>
   </body>
 </html>

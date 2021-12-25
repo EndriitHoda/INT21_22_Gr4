@@ -65,3 +65,42 @@ button:hover {
 input[type="text"],input[type="password"] {
     border: 2px solid #41a0a3;
 }
+/*Ora*/
+.div1 {
+  background: #4E5C4E;
+  float:right;
+      width: 100px;
+      height: 100px;
+      box-shadow:inset 6px 6px 20px #000300;
+      border-radius: 100px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  .div1::before{
+  
+      content: "";
+      background-image: conic-gradient(
+          #FFFFFF -1deg,
+          transparent 2deg
+      );
+      width: 150%;
+      height: 150%;
+      position: absolute;
+      animation: rotate 60s linear infinite;
+  
+  }
+  @keyframes rotate {
+      0%{
+          transform: rotate(0deg);
+      }
+      100%{
+          transform: rotate(360deg);
+      }
+  }
+  push{
+    color:red;
+  }
