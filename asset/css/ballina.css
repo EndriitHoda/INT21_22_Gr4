@@ -1,0 +1,180 @@
+
+/* Pjesa e css navbar  */
+ .navbar {
+    position:fixed;
+    width: 100%;
+    height: 46px;
+    opacity: 70%;
+    border-radius: 13px;
+    background-color: #197c6f;
+    z-index: 2;
+  } 
+  
+ .navbar a{
+     border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+  }
+  
+.navbar a:hover {
+    background-color: rgb(45, 80, 72);
+  } 
+
+ .navbar .log_out {
+   float: right;
+ }
+  .navbar .search-container {
+    float: right;
+  }
+  
+  .navbar input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+/* Pjesa e css slideshow*/
+#displayedSlide {
+  position: absolute;
+  height: 300px; 
+  width: 500px;
+   top: 55px;
+   left: 500px;
+   z-index: 1;
+}
+.slider {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .image-container {
+    width: 1500px;
+    height: 300px;
+    position: relative;
+    transition: left 2s;
+    
+  }
+  .slide {
+    float: left;
+    position: relative;
+  }
+  .buttons {
+    position: relative;
+    top: -20px;
+  }
+  .buttons a {
+    display: inline-block;
+    height: 13px;
+    width: 20px;
+    border-radius: 50px;
+    background-color:#ffffff;
+  }
+  .buttons a:hover {
+      display: inline-block;
+      background-color: #c4c3c3;     
+      transform: scale(1.2);     
+  }
+  /* Pjesa e css fotoja ne background*/
+
+  .background-image{
+    position:relative;
+    width: 100%;
+    opacity: 20%; 
+  }
+
+
+/* Pjesa e css butonat per bright-dark mode*/
+.button1{
+ position: absolute;
+ box-shadow: #ADCFFF 0 -12px 6px inset;
+ font-family: sans-serif;
+ cursor: pointer;
+top: 297px;
+left: 13px;
+width: 55px;
+height: 55px;
+background-color: #f7eeee;
+color: #000000;
+border-radius: 1000px;
+}
+.button2{
+position: absolute;
+box-shadow: #353b42 0 -12px 6px inset;
+font-family: sans-serif;
+cursor: pointer;
+top: 297px;
+left: 75px;
+width: 55px;
+height: 55px;
+background-color:rgb(25, 26, 25);
+color: White;
+border-radius: 1000px;
+}
+
+
+/* Emrat e lojave*/
+span {
+  position:absolute;  
+  font-size:19px;  
+  font-family:Arial, Helvetica, sans-serif;
+  color:#000000;
+}
+
+.tabela {
+  position: relative;
+  top: 450px;
+  left: 10%;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  opacity: 50%;
+}
+
+.table, th, td {
+    text-align: center;
+    border:1px solid #dddddd;
+    padding: 8px;    
+}
+.rreth_nesh {
+  position: relative; 
+  transition: transform .9s;
+  width: 500px; 
+  left:200px;
+  border-radius: 25px;
+  background-color:#1f311f ;
+}
+.rreth_nesh:hover {
+  transform: scale(1.04);
+}
+
+
+.rreth_nesh1 {
+  position: relative; 
+  transition: transform .9s;
+  width: 500px; 
+  left:700px;
+  border-radius: 25px;
+  background-color:#1f311f ;
+
+}
+.rreth_nesh1:hover {
+  transform: scale(1.04);
+}
+
+.kontaktet {
+  position: relative; 
+  transition: transform .9s;
+}
+
+.kontaktet:hover{
+  transform: scale(1.1);
+}

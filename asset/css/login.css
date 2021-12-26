@@ -1,0 +1,106 @@
+body {
+	background-image: url("../images/wallpaper.jpg");
+	 background-repeat: no-repeat;
+	 background-size:100%;
+}
+.responsive {
+  position: fixed;
+  bottom: 0;
+  width: 43%;
+  margin-left: 400px; 
+}
+
+.gallery {
+	background-color:white;
+    border: 4px solid #41a0a3;  
+    margin-bottom:13%;
+    margin-left: 50px;
+    opacity: 95%;    
+}
+
+.permbajtja {
+  padding: 7px;
+  text-align: center;
+  font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+  font-size: 90%;
+}
+
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+}
+
+
+button {
+  background-color: #41a0a3;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 48%;  
+}
+.kyqu{
+  background-color: #41a0a3;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+} 
+input[type="text"],input[type="password"] {
+    border: 2px solid #41a0a3;
+}
+/*Ora*/
+.div1 {
+  background: #4E5C4E;
+  float:right;
+      width: 100px;
+      height: 100px;
+      box-shadow:inset 6px 6px 20px #000300;
+      border-radius: 100px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  .div1::before{
+  
+      content: "";
+      background-image: conic-gradient(
+          #FFFFFF -1deg,
+          transparent 2deg
+      );
+      width: 150%;
+      height: 150%;
+      position: absolute;
+      animation: rotate 60s linear infinite;
+  
+  }
+  @keyframes rotate {
+      0%{
+          transform: rotate(0deg);
+      }
+      100%{
+          transform: rotate(360deg);
+      }
+  }
+  push{
+    color:red;
+  }
