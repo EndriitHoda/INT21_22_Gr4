@@ -25,24 +25,26 @@ function Ora() {
     var name = document.getElementById("name").value
     var email =  document.getElementById("email").value;
       let messages=[]
-     if(password.value.length<=6){
-        messages.push('Passwordi duhet te jete me i gjate se  6 karaktere')
+      if(nameRegex.test(name) == false){
+        messages.push('Emri i perdoruesit \n duhet te filloje me shkronje te madhe!')
+       }
+       else if(emailRegex.test(email) == false){
+        messages.push('Email eshte dhene gabim!')
+       }
+       else if(password.value.length<6){
+        messages.push('Passwordi duhet te jete \n me se paku  6 karaktere!')
       }
-     if(password.value.length>=20){
-        messages.push('Password nuk duhet te jete me i gjate se 20 karaktere')
+     else if(password.value.length>=20){
+        messages.push('Password nuk duhet te jete \n me i gjate se 20 karaktere!')
         }
-    if(password.value==='Passowrd'){
-        messages.push('Password nuk guxon te jete Password')
+    else if(password.value==='Password'){
+        messages.push('Password nuk mund te jete \n \"Password\"!')
         }
-    if(nameRegex.test(name) == false){
-       messages.push('Shkronja e pare e emir duhet te jete e madhe')
-      }
-    if(password.value!=password1.value){
-      messages.push('Rishkruani fjalekalimin')
+     
+    else if(password.value!=password1.value){
+      messages.push('Fjalekalimet nuk perputhen!')
     }
-    if(emailRegex.test(email) == false){
-      messages.push('Email eshte dhene gabim')
-     }
+    
     if(messages.length>0){
         e.preventDefault()
         errorElement.innerText=messages.join('\n')
