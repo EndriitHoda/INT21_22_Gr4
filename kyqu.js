@@ -15,7 +15,6 @@ function Ora() {
   }
   function login(){
   const password = document.getElementById('password')
-  const password1 = document.getElementById('password1')
   const form = document.getElementById('form')
   const errorElement = document.getElementById('error')
   var nameRegex = /^[A-Z][a-z]{2,5}/;
@@ -36,9 +35,7 @@ function Ora() {
     if(nameRegex.test(name) == false){
        messages.push('Shkronja e pare e emir duhet te jete e madhe')
       }
-    if(password.value!=password1.value){
-      messages.push('Passi keq')
-    }
+   
     if(messages.length>0){
         e.preventDefault()
         errorElement.innerText=messages.join('\n')
