@@ -5,21 +5,19 @@
 	<link rel="stylesheet"  href="regjistrohu.css" >
 	<script src="login.js"> </script>
 </head>
- <body onload="Ora()">
+ <body onload="Ora();login();">
     <div class="div1" id="txt" style="color:black" ></div>
- 		<script>
-  			alert("Kjo faqe menagjohet nga Es.gaming");
-		</script>
 	<!-- Login box-i -->
 	<div id="login-box">
 		<!-- pjesa e majt e box-it-->
 		<div class="left-box">
 			<h1>Regjistrohu </h1>
+			<div id="error"></div>
             <form action="login.html" id="form" autocomplete="on">
-				<input type="text" name="username" placeholder="Emri i Perdoruesit" required autofocus>
-				<input type="text" name="email" placeholder="Email" required>
-				<input type="password" name="password" placeholder="Password" required>
-				<input type="password" name="password2" placeholder="Rishkruaj password" required>
+				<input type="text" name="username" id="name" placeholder="Emri i Perdoruesit" required autofocus>
+				<input type="text" name="email" id="email" placeholder="Email" required>
+				<input type="password" name="password" id="password" placeholder="Password" required>
+				<input type="password" name="password2" id="password1" placeholder="Rishkruaj password" required>
 				<input type="submit" class="Regjistrohu" value="Kyqu"></br>
             </form>
 		</div>		
