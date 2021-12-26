@@ -7,7 +7,7 @@
     opacity: 70%;
     border-radius: 13px;
     background-color: #197c6f;
-    z-index: 1;
+    z-index: 2;
   } 
   
  .navbar a{
@@ -38,6 +38,14 @@
   }
   
 /* Pjesa e css slideshow*/
+#displayedSlide {
+  position: absolute;
+  height: 300px; 
+  width: 500px;
+   top: 55px;
+   left: 500px;
+   z-index: 1;
+}
 .slider {
     position: relative;
     width: 500px;
@@ -59,17 +67,6 @@
     float: left;
     position: relative;
   }
-
-  #slide-1:target ~ .image-container {
-    left: 0px;
-  }
-  #slide-2:target ~ .image-container {
-    left: -500px;
-  }
-  #slide-3:target ~ .image-container {
-    left: -1000px;
-  }
-    
   .buttons {
     position: relative;
     top: -20px;
@@ -134,7 +131,7 @@ span {
 
 .tabela {
   position: relative;
-  top: 100px;
+  top: 450px;
   left: 10%;
   font-family: arial, sans-serif;
   border-collapse: collapse;

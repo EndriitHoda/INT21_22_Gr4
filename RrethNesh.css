@@ -22,3 +22,21 @@ body {
     size: 0px;
     color: #499ab3;
 }    
+
+.foto {
+  position: absolute;
+  height: 325px;
+  width: 500px;
+  z-index: 1;
+}
+.sponsor {
+  position: relative;
+  width: 300px;
+  height: 150px;
+  top: 300px;
+  left: 150px;
+}
+.sponsor:hover{
+  cursor: pointer;
+  transform: scale(1.01);
+}

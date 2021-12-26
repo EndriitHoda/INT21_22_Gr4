@@ -20,26 +20,26 @@
                transition: transform .9s;    
               } 
             .a1:hover{
-              transform:translate(50px,80px);
+              transform: scale(1.02);
               }
               .b1 {
                transition: transform .9s;                  
               } 
             .b1:hover{
-              transform: scale(1.1);
+              transform: scale(1.02);
               }
               .c1 {
                transition: transform .9s;  
               } 
             .c1:hover{
-              transform:translate(-50px,80px);
+              transform: scale(1.02);
               }
         </style>
     </head>
     <body style="background-color:#294525;">
-     <script>
+     <!-- <script>
         alert("Per te vazhduar tutje duhet ti pranoni termet e privatesise");
-       </script>
+       </script> -->
 
          <!-- Fillimi i Navbar -->
           <header>      
@@ -57,25 +57,23 @@
          </header>
          <!--Perfundimi i Navbar-->
          <!-- Fillimi i slideshow -->
-         <!-- -->
-     <div>
-        <div class="slider">
-            <span id="slide-1"></span>
-            <span id="slide-2"></span>
-            <span id="slide-3"></span>
-            <div class="image-container">
-              <img src="images/2.jpg" class="slide" width="500" height="300" />
-              <img src="images/5.jpg" class="slide" width="500" height="300" />
-              <img src="images/7.jpg" class="slide" width="500" height="300" />
-            </div>
-            <div class="buttons">
-              <a href="#slide-1"></a>
-              <a href="#slide-2"></a>
-              <a href="#slide-3"></a>
-              
-            </div> 
-          </div>
+     <div id="slider">
+      <div class="image-container" style="display: none">
+        <img src="images/2.jpg" alt="">
+        <img src="images/5.jpg" alt="">
+        <img src="images/7.jpg" alt="">
+        <img src="images/nba-slider.png" alt="">
+        <img src="images/fortnitee.jpg" alt="">
       </div>
+      <img  src="images/slider1.png" id="displayedSlide" alt="">
+    </div>
+    <script>
+      let images = Array.from(document.querySelectorAll("#slider .image-container img")).map(el => el.src);
+      let index = 0;
+      setInterval(() => {
+        document.getElementById("displayedSlide").src = images[index++ % images.length];
+      }, 3000);
+    </script>
          <!-- Perfundimi i Slideshow-->
          <img class="background-image" src="images/pano.png">
 
@@ -210,20 +208,20 @@
 <table >
   <tr>
     <td style="border:0px" colspan="2" style="float:center">
-            <img style="width:20.4%" class="a1" src="images/pubg.png" alt="Pub G" >
-            <video class="b1" autoplay muted loop style="width:42%" >
-            <source src="images/pub.mp4" type="video/mp4">
+            <img style="width:20.4%" class="a1" src="images/lebron.jpg" alt="Lebron James" >
+            <video class="b1" autoplay muted loop style="width:40%" >
+            <source src="images/nba1.mp4" type="video/mp4">
             </video>
-        <img class="c1" style="width:20.4%" src="images/pubg.png" alt="Pub G" >
+        <img class="c1" style="width:20.4%" src="images/harden.jpg" alt="James harden" >
      </td> 
   </tr>
   <tr>
     <td style="border:0px" colspan="2" style="float:center">
-            <img class="a1" style="width:20.4%" src="images/pubg.png" alt="Pub G" >
-            <video class="b1" autoplay muted loop style="width:42%" >
-            <source src="images/pub.mp4" type="video/mp4">
+            <img class="a1" style="width:20.4%" src="images/mbappe.jpg" alt="mbappe" >
+            <video class="b1" autoplay muted loop style="width:40%" >
+            <source src="images/fifa.mp4" type="video/mp4">
             </video>
-        <img class="c1" style="width:20.4%" src="images/pubg.png" alt="Pub G" >
+        <img class="c1" style="width:20.4%" src="images/cr7.jpg" alt="CR7" >
      </td>
   </tr>
 </table>  
