@@ -19,10 +19,11 @@ function Ora() {
   const form = document.getElementById('form')
   const errorElement = document.getElementById('error')
   var nameRegex = /^[A-Z][a-z]{2,5}/;
-  
+  var emailRegex = /^\w+[._-]?\w+@[A-Za-z]+[-]?[A-Za-z]+\.[A-Za-z]{2,3}/;
  
   form.addEventListener('submit', (e)=>{
     var name = document.getElementById("name").value
+    var email =  document.getElementById("email").value;
       let messages=[]
      if(password.value.length<=6){
         messages.push('Passwordi duhet te jete me i gjate se  6 karaktere')
@@ -37,8 +38,11 @@ function Ora() {
        messages.push('Shkronja e pare e emir duhet te jete e madhe')
       }
     if(password.value!=password1.value){
-      messages.push('Passi keq')
+      messages.push('Rishkruani fjalekalimin')
     }
+    if(emailRegex.test(email) == false){
+      messages.push('Email eshte dhene gabim')
+     }
     if(messages.length>0){
         e.preventDefault()
         errorElement.innerText=messages.join('\n')
