@@ -1,3 +1,24 @@
 body {
     background-color: #294525;
 }
+#myVideo {
+    position: relative;
+    left: 450px;
+    height: 99%;
+    right: 0;
+  }
+.titulli {
+    position: relative;
+    text-align: center;
+    top: 80px;
+    color: orange;
+    font-family: Cursive;
+  }
+.paragraf {
+    position: relative;
+    text-align: center;
+    top: 120px;
+    font-family: cursive;
+    size: 0px;
+    color: #499ab3;
+}    
