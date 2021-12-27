@@ -38,51 +38,67 @@
   }
   
 /* Pjesa e css slideshow*/
-#displayedSlide {
-  position: absolute;
-  height: 300px; 
-  width: 500px;
-   top: 55px;
-   left: 500px;
-   z-index: 1;
+.img-slider{
+  position: relative;
+  width: 600px;
+  height: 300px;
+  margin-left: 500px;
 }
-.slider {
-    position: relative;
-    width: 500px;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    text-align: center;
-    overflow: hidden;
+
+.img-slider .slide{
+  z-index: 1;
+  position: absolute;
+  width: 99%;
+  clip-path: circle(0% at 0 50%);
+}
+
+.img-slider .slide.active{
+  clip-path: circle(150% at 0 50%);
+  transition: 2s;
+  transition-property: clip-path;
+}
+
+.img-slider .slide img{
+  z-index: 1;
+  width: 90%;
+  float:center;
+  border-radius: 5px;
+}
+
+.img-slider .navigation{
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.img-slider .navigation .btn{
+  background:white;
+  width: 12px;
+  height: 12px;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.img-slider .navigation .btn.active{
+  background: #2696E9;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+  .img-slider .navigation{
+    bottom: 25px;
   }
-  .image-container {
-    width: 1500px;
-    height: 300px;
-    position: relative;
-    transition: left 2s;
-    
+
+  .img-slider .navigation .btn{
+    width: 10px;
+    height: 10px;
+    margin: 8px;
   }
-  .slide {
-    float: left;
-    position: relative;
-  }
-  .buttons {
-    position: relative;
-    top: -20px;
-  }
-  .buttons a {
-    display: inline-block;
-    height: 13px;
-    width: 20px;
-    border-radius: 50px;
-    background-color:#ffffff;
-  }
-  .buttons a:hover {
-      display: inline-block;
-      background-color: #c4c3c3;     
-      transform: scale(1.2);     
-  }
+
+
   /* Pjesa e css fotoja ne background*/
 
   .background-image{
@@ -150,7 +166,7 @@ span {
   width: 500px; 
   left:200px;
   border-radius: 25px;
-  background-color:#1f311f ;
+  background-color:#365336 ;
 }
 .rreth_nesh:hover {
   transform: scale(1.04);
