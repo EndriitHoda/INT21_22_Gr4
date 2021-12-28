@@ -21,7 +21,7 @@ body {
     top: 120px;
     font-family: cursive;
     size: 0px;
-    color: #499ab3;
+    color: #0e1011;
 }    
 
 .foto {
@@ -42,14 +42,14 @@ body {
   transform: scale(1.01);
 }
 
-p {
-  background-color: red;
+.paragraf {
+  background-color: rgb(109, 123, 163);
   animation-name: example;
   animation-duration: 4s;
   z-index: -1;
 }
 
 @keyframes example {
-  from {background-color: red;}
-  to {background-color: yellow;}
+  from {background-color: rgb(133, 81, 81);}
+  to {background-color: rgb(197, 197, 98);}
 }
