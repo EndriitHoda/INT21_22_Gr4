@@ -190,18 +190,34 @@
         <a  target="_blank" href="games/nba.html"><img style="left: 640px; top: 800px;" class="gallery" src="asset/images/nba-22.png" alt="2k22 NBA"></a>
         <a  target="_blank" href="games/blur.html"><img style="left: 890px; top: 800px;" class="gallery" src="asset/images/blur.jpg" alt="Blur"></a>
         <a  target="_blank" href="games/fortnite.html"><img style="left: 1140px; top: 800px;" class="gallery" src="asset/images/fortnite-p.jpg"alt="Fortnite" ></a>
-        <a  target="_blank" href="games/gta5.html"><img style="left: 140px; top: 1150px;" class="gallery" src="asset/images/gta-5.png" alt="GTA 5"></a>
-        <a  target="_blank" href="games/gtaSanAndreas.html"><img style="left: 390px; top: 1150px;" class="gallery" src="asset/images/gtaSA.jpg" alt="GTA San Andreas"></a>
-        <a  target="_blank" href="games/callofduty.html"><img style="left: 640px; top: 1150px;" class="gallery" src="asset/images/callduty.jpg" alt="Call of Duty"></a>
-        <a  target="_blank" href="games/rainbow.html"><img style="left: 890px; top: 1150px;" class="gallery" src="asset/images/rainbow.jpg"alt="Rainbow" ></a>
-        <a  target="_blank" href="games/Battlefield.html"><img style="left: 1140px; top: 1150px;" class="gallery" src="asset/images/battlefield.jpg"alt="Battlefield" ></a>
-        <a  target="_blank" href="games/park.html"><img style="left: 140px; top: 1500px;" class="gallery" src="asset/images/park.jpg" alt="Park Beyond"></a>
-        <a  target="_blank" href="games/forza.html"><img style="left: 390px; top: 1500px;" class="gallery" src="asset/images/forza.png"alt="Forza Harizon" ></a>
-        <a  target="_blank" href="games/super.html"><img style="left: 640px; top: 1500px;" class="gallery" src="asset/images/mario.jpg" alt="Mario"></a>      
-        <a  target="_blank" href="games/metroid.html"><img style="left: 890px; top: 1500px;" class="gallery" src="asset/images/metroid.jpg"alt="Metroid" ></a>
-        <a  target="_blank" href="games/Tales.html"><img style="left: 1140px; top: 1500px;" class="gallery" src="asset/images/arise.png"alt="Tales of Arise" ></a>
+        <a  target="_blank" href="games/gta5.html"><img id="drag1" draggable="true" ondragstart="drag(event)" style="left: 140px; top: 1150px;" class="gallery" src="asset/images/gta-5.png" alt="GTA 5"></a>
+        <a  target="_blank" href="games/gtaSanAndreas.html"><img id="drag1" draggable="true" ondragstart="drag(event)" style="left: 390px; top: 1150px;" class="gallery" src="asset/images/gtaSA.jpg" alt="GTA San Andreas"></a>
+        <a  target="_blank" href="games/callofduty.html"><img id="drag1" draggable="true" ondragstart="drag(event)" style="left: 640px; top: 1150px;" class="gallery" src="asset/images/callduty.jpg" alt="Call of Duty"></a>
+        <a  target="_blank" href="games/rainbow.html"><img id="drag1" draggable="true" ondragstart="drag(event)" style="left: 890px; top: 1150px;" class="gallery" src="asset/images/rainbow.jpg"alt="Rainbow" ></a>
+        <a  target="_blank" href="games/Battlefield.html"><img id="drag1" draggable="true" ondragstart="drag(event)" style="left: 1140px; top: 1150px;" class="gallery" src="asset/images/battlefield.jpg"alt="Battlefield" ></a>
+        <a  target="_blank" href="games/park.html"><img id="drag1" draggable="true" ondragstart="drag(event)" style="left: 140px; top: 1500px;" class="gallery" src="asset/images/park.jpg" alt="Park Beyond"></a>
+        <a  target="_blank" href="games/forza.html"><img id="drag1" draggable="true" ondragstart="drag(event)" style="left: 390px; top: 1500px;" class="gallery" src="asset/images/forza.png"alt="Forza Harizon" ></a>
+        <a  target="_blank" href="games/super.html"><img id="drag1" draggable="true" ondragstart="drag(event)" style="left: 640px; top: 1500px;" class="gallery" src="asset/images/mario.jpg" alt="Mario"></a>      
+        <a  target="_blank" href="games/metroid.html"><img id="drag1" draggable="true" ondragstart="drag(event)" style="left: 890px; top: 1500px;" class="gallery" src="asset/images/metroid.jpg"alt="Metroid" ></a>
+        <a  target="_blank" href="games/Tales.html"><img id="drag1" draggable="true" ondragstart="drag(event)" style="left: 1140px; top: 1500px;" class="gallery" src="asset/images/arise.png"alt="Tales of Arise" ></a>
+</br></br></br></br></br></br></br>
+        <p style="text-align:center"><b>Bene drop lojat qe doni ti largoni nga faqja</b></p>
+<canvas  id="myCanvas" width="400" height="200" style="border:5px solid #black;"  ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
 
-        
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
 
 <table class="tabela" >
      <tr>
@@ -248,6 +264,7 @@
         <td style="background-color:rgb(173, 218, 143);">8 GB hapesire e lire</td>
      </tr>
 </table>
+
         <!--Footer-i pjesa e informatav-->
         <footer>  
     <table class="rreth_nesh" style="top: 1375px;">
@@ -277,7 +294,6 @@
 		<a href="https://www.facebook.com/" target=_blank > <img style="position:relative;top:1115px; left:860px;width:60px;height:60px;" src="asset/images/facebook.png"> </a>
 		<a href="https://www.instagram.com/" target=_blank > <img style="position:relative;top:1115px; left:900px;width:60px;height:60px;" src="asset/images/instagram.png"> </a>
 		<a href="https://twitter.com/explore" target=_blank > <img style="position:relative;top:1115px; left:940px;width:60px;height:60px;" src="asset/images/twitter.png"> </a>
-
 
 <table >
   <tr>
