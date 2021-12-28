@@ -68,7 +68,7 @@ input[type="text"],input[type="password"] {
 /*Ora*/
 .div1 {
   background: #4E5C4E;
-  float:right;
+  float:left;
       width: 100px;
       height: 100px;
       box-shadow:inset 6px 6px 20px #000300;
@@ -81,8 +81,6 @@ input[type="text"],input[type="password"] {
   
   }
   .div1::before{
-  
-      content: "";
       background-image: conic-gradient(
           #FFFFFF -1deg,
           transparent 2deg
