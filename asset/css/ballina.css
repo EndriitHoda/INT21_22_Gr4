@@ -167,8 +167,6 @@ span {
   left:200px;
   border-radius: 25px;
   background-color:#1f311f ;
-  outline-style: dashed;
-  border-style: dotted;
 }
 .rreth_nesh:hover {
   transform: scale(1.04);
@@ -182,8 +180,6 @@ span {
   left:700px;
   border-radius: 25px;
   background-color:#1f311f ;
-  outline-style: dashed;
-  border-style: dotted;
 
 }
 .rreth_nesh1:hover {
