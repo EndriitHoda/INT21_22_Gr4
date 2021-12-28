@@ -68,7 +68,7 @@ input[type="text"],input[type="password"] {
 /*Ora*/
 .div1 {
   background: #4E5C4E;
-  float:left;
+  float:right;
       width: 100px;
       height: 100px;
       box-shadow:inset 6px 6px 20px #000300;
