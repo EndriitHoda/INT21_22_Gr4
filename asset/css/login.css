@@ -81,6 +81,7 @@ input[type="text"],input[type="password"] {
   
   }
   .div1::before{
+    content:"";
       background-image: conic-gradient(
           #FFFFFF -1deg,
           transparent 2deg
@@ -99,4 +100,3 @@ input[type="text"],input[type="password"] {
           transform: rotate(360deg);
       }
   }
- 
