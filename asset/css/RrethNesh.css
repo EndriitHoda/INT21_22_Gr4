@@ -13,6 +13,7 @@ body {
     top: 80px;
     color: orange;
     font-family: Cursive;
+    text-transform: capitalize;
   }
 .paragraf {
     position: relative;
@@ -39,4 +40,16 @@ body {
 .sponsor:hover{
   cursor: pointer;
   transform: scale(1.01);
+}
+
+p {
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  z-index: -1;
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
 }
