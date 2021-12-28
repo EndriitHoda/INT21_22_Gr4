@@ -81,3 +81,14 @@ input[type=submit]:hover {
   cursor: pointer;
   transform: scale(1.01);
 }
+#myCanvas {
+  border:5px solid black;
+  position: relative;
+  left: 500px;
+}
+#svg{
+  z-index: 1;
+  position: relative;
+  top: 45px;
+  left: 130px;
+}
