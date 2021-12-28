@@ -198,3 +198,10 @@ span {
 .kontaktet:hover{
   transform: scale(1.1);
 }
+#myCanvas {
+  z-index: 1;
+  border:5px solid black;
+  position: relative;
+  top:40px;
+  left: 550px;
+}
