@@ -23,19 +23,25 @@ function Ora() {
   form.addEventListener('submit', (e)=>{
     var name = document.getElementById("name").value
       let messages=[]
-      if(nameRegex.test(name) == false){
-        messages.push('Emri i perdoruesit \n duhet te filloje me shkronje te madhe!')
-       }
-      else if(password.value.length<6){
-        messages.push('Passwordi duhet te jete \n me se paku  6 karaktere!')
-       }
-      else if(password.value.length>=20){
-        messages.push('Password nuk duhet te jete \n me i gjate se 20 karaktere!')
-       }
-      else if(password.value==='Password'){
-        messages.push('Password nuk mund te jete \n \"Password\"!')
-       }
-   
+      try{
+      if(nameRegex.test(name) == false) throw "me shkronje te madhe";
+      }
+      catch(err) {
+        messages.push('Emri duhet te filloj '+ err);
+      }
+      try{
+       if(password.value.length<6) throw "me i gjate se 6 karaktere!";
+       if(password.value.length>=20) throw "me i shkurte se 20 karaktere!";
+      }
+      catch(err) {
+        messages.push('Password duhet te jete '+ err);
+      }
+      try {
+       if(password.value==='Password') throw "Password nuk mund te jete \n \"Password\"!";
+      }
+       catch(err) {
+        messages.push(''+ err);
+      }
       if(messages.length>0){
         e.preventDefault()
         errorElement.innerText=messages.join('\n')
