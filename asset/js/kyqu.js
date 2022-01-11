@@ -25,9 +25,13 @@ function Ora() {
       let messages=[]
       try{
       if(nameRegex.test(name) == false) throw "me shkronje te madhe";
+     
       }
       catch(err) {
-        messages.push('Emri duhet te filloj '+ err);
+        let result = name.replace(name, function (x) {
+          return x.charAt(0).toUpperCase()+ x.slice(1); 
+        });
+        messages.push('Emri duhet te filloj '+ err+' per shembull: \" ' + result +" \"");
       }
       try{
        if(password.value.length<6) throw "me i gjate se 6 karaktere!";
