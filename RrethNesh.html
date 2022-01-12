@@ -54,6 +54,23 @@
              </iframe>
           </div>
       </div>
+    <div style="position: absolute;top: 350%;left: 82%;">  
+          <label> Gjej koordinatat gjeografike tua: </label>   
+          <button class="geeks" onclick="getlocation()"> Kërko </button>
+          <p id="demo1"></p>
+    </div>
+    <script>
+         var variable1 = document.getElementById("demo1");
+
+         function getlocation() {
+             navigator.geolocation.getCurrentPosition(showLoc);
+          }
+
+         function showLoc(pos) {
+            variable1.innerHTML = "Latitude: " + pos.coords.latitude + "<br>Longitude: " + pos.coords.longitude;
+          }
+     </script>
+      
       
        <!--Footer-i pjesa e informatav-->
            <footer>  
