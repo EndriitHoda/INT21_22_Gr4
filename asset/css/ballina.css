@@ -122,6 +122,7 @@ background-color: #f7eeee;
 color: #000000;
 border-radius: 1000px;
 }
+
 .button2{
 position: absolute;
 box-shadow: #353b42 0 -12px 6px inset;
@@ -135,7 +136,6 @@ background-color:rgb(25, 26, 25);
 color: White;
 border-radius: 1000px;
 }
-
 
 /* Emrat e lojave*/
 span {
