@@ -32,13 +32,14 @@
   
   .navbar input[type=text] {
     padding: 6px;
+    width: 150px;
     margin-top: 8px;
     font-size: 17px;
     border: none;
   }
   .filani {
     position: relative;
-    left: 52%;
+    left: 55%;
     font-size: 17px;
     color:white;
   }
@@ -50,7 +51,7 @@
     position: relative;
     width: 30px;
     height: 30px;
-    left: 52.5%;
+    left: 43.5%;
     top: 8px;
     border-radius:20px;
   }

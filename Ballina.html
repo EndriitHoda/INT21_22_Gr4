@@ -59,7 +59,7 @@
                   <a href="RrethNesh.html">Rreth nesh</a>
                   <a href="Ndihme.html">Ndihmë</a>
                   <a class="log_out" href="login.html"> Largohu</a>  
-                  <label class="filani">Account: <span id="filani"> Filani </span></label>
+                  <label class="filani">Account: <span id="filani" style="background-color: #197c6f;font-family: cursive;"> Filani </span></label>
                   <img class="acc" src="asset/images/acc.png"> 
                   <div class="search-container">
                     <form >
@@ -616,6 +616,12 @@ if(name==="pub"){
 		<a href="https://www.instagram.com/" target=_blank > <img style="position:relative;top:490px;width:60px;height:60px;" src="asset/images/instagram.png"> </a>
 		<a href="https://twitter.com/explore" target=_blank > <img style="position:relative;top:490px;width:60px;height:60px;" src="asset/images/twitter.png"> </a>
 </div>
+<script>
+    
+  if(localStorage.getItem('current_user'))
+        document.getElementById('filani').innerText = JSON.parse(localStorage.current_user).name
+        
+</script>
         </footer>
         
     </body>
