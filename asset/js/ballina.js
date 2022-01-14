@@ -1,16 +1,13 @@
 function Bright_night() {
      var t = new Date().getHours();
-            if (t > 6 || t < 18) {
-                document.body.style.backgroundColor="#294525";
-            } else if (t > 18 || t < 6) {
+            if (t >= 6 && t < 18) {
                 document.body.style.backgroundColor="#C1BDC3";
+            } else {
+                document.body.style.backgroundColor="#294525";
         } 
     }
 
-function singup(e){
-    event.preventDefault();
-     console.log('working');
-
+function signup(){
     var email = document.getElementById('email').value;
     var name = document.getElementById('name').value;
     var pass = document.getElementById('password').value;
@@ -27,9 +24,7 @@ function singup(e){
     window.location.href = 'login.html';   
 }
 
-function loginFunc(e){
-    event.preventDefault();
-
+function loginFunc(){
     var name = document.getElementById('name').value;
     var pass = document.getElementById('password').value;
     var result = document.getElementById('error'); 
@@ -48,5 +43,4 @@ function loginFunc(e){
     }else if(name == data.name && pass != data.password) {
         result.innerHTML = 'Password i gabuar';
     } 
-
 }
