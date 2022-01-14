@@ -63,10 +63,20 @@
                   <img class="acc" src="asset/images/acc.png"> 
                   <div class="search-container">
                     <form >
-                      <input type="text" placeholder="Search.." id="kerko">
+                      <input type="text" id="kerko" placeholder="Search.." >
+                      <input type="button" value="kerko" onclick="newDoc()">
                     </form>
                   </div>
                 </div>  
+                <script>
+function newDoc() {
+var name = document.getElementById("kerko").value
+if(name==="pub"){
+  window.location.assign("games/PubG.html")
+  }
+}
+
+</script>
          </header>
          <!--Perfundimi i Navbar-->
          <!-- Fillimi i slideshow -->
@@ -576,9 +586,6 @@
         <td style="position:relative;  font-size:19px; font-family:Arial, Helvetica, sans-serif;color: #499ab3;">ES Gaming është hapur në dhjetor të vitit 2021, <br> është zhvilluar dhe menagjuar nga dy student të FIEK. <br> Arsyeja e hapjes së kësaj faqeje është promovimi i lojërave më të reja ndërkombëtare edhe në trojet shqipëtare. </td>
       </tr>
     </table>
-
-		
-		
 <table >
   <tr>
     <td style="border:0px" colspan="2" style="float:center">

@@ -1,10 +1,16 @@
 <html>
       <head>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
           <link rel = "icon" href = "asset/images/gaming-logo.jpg" type = "image/x-icon">
           <title>Login</title>
           <link rel="stylesheet" href="asset/css/login.css">
           <script src="asset/js/kyqu.js"> </script>
           <script src="asset/js/ballina.js"> </script>
+          <style>
+          input:focus {
+            background-color: #d5d6d2;
+          }
+          </style>
       </head>
   <body onload="Ora();login();">
     <div class="div1" id="txt" ></div>
@@ -22,7 +28,7 @@
               <div class="permbajtja" >
               <div id="error"></div>
 	              <form onsubmit="loginFunc()" action="Ballina.html" id="form" autocomplete="on">
-                   <input type="text" id="name" name="name" placeholder="Sheno Emrin e Perdoruesit"  required autofocus></br>
+                   <input type="text" id="name" name="name" placeholder="Sheno Emrin e Perdoruesit"  required ></br>
                    <input type="password" id="password" name="password" placeholder="Sheno fjalekalimin" required></br>
                    <input type="submit" class="kyqu" value="Kyçu"></br>
                    <label> <input type="checkbox" > Më kujto</label></br>

@@ -5,6 +5,12 @@
 	<link rel="stylesheet"  href="asset/css/regjistrohu.css" >
 	<script src="asset/js/login.js"> </script>
 	<script src="asset/js/ballina.js"> </script>
+	<style>
+        input:focus {
+        background-color: #d5d6d2;
+       }
+    </style>
+
 </head>
  <body onload="Ora();login();">
     <div class="div1" id="txt" style="color:black" ></div>
@@ -21,7 +27,7 @@
 			<h1>Regjistrohu </h1>
 			<div id="error"></div>
             <form onsubmit="singup()" action="login.html" id="form" autocomplete="on">
-				<input type="text" name="username" id="name" placeholder="Emri i Perdoruesit" required autofocus>
+				<input type="text" name="username" id="name" placeholder="Emri i Perdoruesit" required >
 				<input type="text" name="email" id="email" placeholder="Email" required>
 				<input type="password" name="password" id="password" placeholder="Password" required>
 				<input type="password" name="password2" id="password1" placeholder="Rishkruaj password" required>
