@@ -50,25 +50,27 @@
       </figure>
        <div >
           <div >
-              <iframe style="position: relative;top: 600px;left: 200px;" width="1000" height="500" src="https://maps.google.com/maps?q=Kamenice%20Kosove&t=&z=13&ie=UTF8&iwloc=&output=embed" >
+              <iframe style="position: relative;top: 600px;left: 200px;" width="1000" height="500" src="https://maps.google.com/maps?q=42.6724,21.1645&t=&z=13&ie=UTF8&iwloc=&output=embed" >
              </iframe>
           </div>
       </div>
-    <div style="position: absolute;top: 350%;left: 82%;">  
-          <label> Gjej koordinatat gjeografike tua: </label>   
-          <button class="geeks" onclick="getlocation()"> Kërko </button>
-          <p id="demo1"></p>
-    </div>
+   
+    
     <script>
-         var variable1 = document.getElementById("demo1");
-
-         function getlocation() {
-             navigator.geolocation.getCurrentPosition(showLoc);
+          function resolveUrlForGooogleMap(lat, lon){
+            return `https://maps.google.com/maps?q=${lat},${lon}&t=&z=13&ie=UTF8&iwloc=&output=embed`;
           }
 
-         function showLoc(pos) {
-            variable1.innerHTML = "Latitude: " + pos.coords.latitude + "<br>Longitude: " + pos.coords.longitude;
-          }
+          
+          function updateMap(pos){
+            let map =document.getElementById("map"); 
+            let url = resolveUrlForGooogleMap(pos.coords.latitude, pos.coords.longitude);
+              if(map.src != url) map.src = url;
+            }
+
+          setInterval(function() {
+            navigator.geolocation.getCurrentPosition(updateMap);
+          }, 10000);
      </script>
       
       
@@ -92,16 +94,16 @@
               </tr>
             </table>
         
-                <h1 style="position:relative; font-size:19px;	font-family:Arial, Helvetica, sans-serif;top:670px; left:200px;color:#a3ff00;">Na kontaktoni në: <h1>
-                <p style="position:relative; font-size:19px;	font-family:Arial, Helvetica, sans-serif;top:630px; left:420px;"> +91 9999 999 999 </p>
-                <p style="position:relative; font-size:19px;	font-family:Arial, Helvetica, sans-serif;top:590px; left:700px;"> esgaming@gmail.com </p>
-                <a class="kontaket" href="" target=_blank> <img style="position:relative;top:511px; left:380px;width:30px;height:30px;" src="asset/images/phone.png"> </a>
-                <a class="kontaket" href="" target=_blank> <img style="position:relative;top:513px; left:621px;width:30px;height:30px;" src="asset/images/email.png"> </a>
-                
-                <a class="kontaket" href="https://www.facebook.com/" target=_blank > <img style="position:relative;top:515px; left:860px;width:60px;height:60px;" src="asset/images/facebook.png"> </a>
-                <a class="kontaket" href="https://www.instagram.com/" target=_blank > <img style="position:relative;top:515px; left:900px;width:60px;height:60px;" src="asset/images/instagram.png"> </a>
-                <a class="kontaket" href="https://twitter.com/explore" target=_blank > <img style="position:relative;top:515px; left:940px;width:60px;height:60px;" src="asset/images/twitter.png"> </a>
-           
-                </footer>
+            <div style="display: flex;flex-direction: row;width: 100%;justify-content: space-evenly;">
+              <h1 style="position:relative;top:645px;font-size:19px;font-family:Arial, Helvetica, sans-serif; color:#a3ff00;">Na kontaktoni në: </h1>
+              <a> <img style="position:relative;top:650px;width:30px;height:30px;" src="asset/images/phone.png"> </a>
+              <p style="position:relative;top:638px;left:-80px;font-size:19px;font-family:Arial, Helvetica, sans-serif;"> +91 9999 999 999 </p>
+              <a> <img style="position:relative;top:650px;width:30px;height:30px;" src="asset/images/email.png"> </a>
+              <p style="position:relative;top:638px;left:-80px;font-size:19px;font-family:Arial, Helvetica, sans-serif;"> esgaming@gmail.com </p>
+              <a href="https://www.facebook.com/" target=_blank > <img style="position:relative;top:645px;width:60px;height:60px;" src="asset/images/facebook.png"> </a>
+                <a href="https://www.instagram.com/" target=_blank > <img style="position:relative;top:645px;width:60px;height:60px;" src="asset/images/instagram.png"> </a>
+                <a href="https://twitter.com/explore" target=_blank > <img style="position:relative;top:645px;width:60px;height:60px;" src="asset/images/twitter.png"> </a>
+            </div>
+         </footer>
     </body>
 </html>

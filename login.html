@@ -4,6 +4,7 @@
           <title>Login</title>
           <link rel="stylesheet" href="asset/css/login.css">
           <script src="asset/js/kyqu.js"> </script>
+          <script src="asset/js/ballina.js"> </script>
       </head>
   <body onload="Ora();login();">
     <div class="div1" id="txt" ></div>
@@ -20,10 +21,10 @@
             <img class="logo" src="asset/images/logo.png">
               <div class="permbajtja" >
               <div id="error"></div>
-	              <form action="Ballina.html" id="form" autocomplete="on">
+	              <form onsubmit="loginFunc()" action="Ballina.html" id="form" autocomplete="on">
                    <input type="text" id="name" name="name" placeholder="Sheno Emrin e Perdoruesit"  required autofocus></br>
                    <input type="password" id="password" name="password" placeholder="Sheno fjalekalimin" required></br>
-                   <input type="submit" class="kyqu" onclick="ajax" value="Kyçu"></br>
+                   <input type="submit" class="kyqu" value="Kyçu"></br>
                    <label> <input type="checkbox" > Më kujto</label></br>
                    <a href="login.html" ><button type="button">Anulo</button></a>
                    <a href="regjistrohu.html"><button type="button"  >Keni harruar fjalëkalimin?</button></a>
