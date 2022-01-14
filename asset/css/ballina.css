@@ -31,15 +31,17 @@
   }
   
   .navbar input[type=text] {
+    position: relative;
     padding: 6px;
     width: 150px;
+    top: -21px;
     margin-top: 8px;
     font-size: 17px;
     border: none;
   }
   .filani {
     position: relative;
-    left: 55%;
+    left: 52%;
     font-size: 17px;
     color:white;
   }
@@ -51,9 +53,19 @@
     position: relative;
     width: 30px;
     height: 30px;
-    left: 43.5%;
+    left: 40.5%;
     top: 8px;
     border-radius:20px;
+  }
+
+  #kerko1 {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: -5px;
+    padding: 6px;
+    margin-top: 8px;
+    border-radius: 30px;
   }
 /* Pjesa e css slideshow*/
 .img-slider{
