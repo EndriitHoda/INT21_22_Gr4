@@ -7,7 +7,10 @@ function Bright_night() {
         } 
     }
 
-function signup(){
+function singup(e){
+    event.preventDefault();
+     console.log('working');
+
     var email = document.getElementById('email').value;
     var name = document.getElementById('name').value;
     var pass = document.getElementById('password').value;
@@ -24,7 +27,9 @@ function signup(){
     window.location.href = 'login.html';   
 }
 
-function loginFunc(){
+function loginFunc(e){
+    event.preventDefault();
+
     var name = document.getElementById('name').value;
     var pass = document.getElementById('password').value;
     var result = document.getElementById('error'); 
@@ -43,4 +48,5 @@ function loginFunc(){
     }else if(name == data.name && pass != data.password) {
         result.innerHTML = 'Password i gabuar';
     } 
+
 }
